@@ -26,12 +26,12 @@ import main from './main/main.component';
 import constants from './app.constants';
 import util from '../components/util/util.module';
 import socket from '../components/socket/socket.service';
+import syllabus from './syllabus/syllabus.component';
 
 import './app.css';
 
 angular.module('coursePlannerApp', [ngCookies, ngResource, ngSanitize, 'btford.socket-io', uiRouter,
-    uiBootstrap, _Auth, account, admin, navbar, footer, main, constants, socket, util
-  ])
+    uiBootstrap, _Auth, account, admin, navbar, footer, main, constants, socket, util, syllabus ])
   .config(routeConfig)
   .run(function($rootScope, $location, Auth) {
     'ngInject';
